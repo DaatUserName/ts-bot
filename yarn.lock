@@ -374,6 +374,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/mongodb@npm:*":
+  version: 4.0.6
+  resolution: "@types/mongodb@npm:4.0.6"
+  dependencies:
+    mongodb: "*"
+  checksum: b0f138120920965b14f30f92d64979a8c6cce0dee195d028255441a3c9b42a5ed531ddbdfcdee04bf2021a007dc16467dd5d13e2158c16ada254b29d29569e1d
+  languageName: node
+  linkType: hard
+
+"@types/mongoose-auto-increment@npm:^5":
+  version: 5.0.34
+  resolution: "@types/mongoose-auto-increment@npm:5.0.34"
+  dependencies:
+    "@types/mongoose": ^4.1.12
+  checksum: 57fffd58019a2db89ad49c71453be9a34d0298ab21d61f980c9137037367770c5bfd777a890e52e522b11f5e59a5314bc6683fbf38179dc7ade4b42e1127ef79
+  languageName: node
+  linkType: hard
+
+"@types/mongoose@npm:^4.1.12":
+  version: 4.7.56
+  resolution: "@types/mongoose@npm:4.7.56"
+  dependencies:
+    "@types/mongodb": "*"
+    "@types/node": "*"
+  checksum: e90cb8776a57cd9885374966eb3e2df5716844ded1bac7501bd364b8c13a2686dcf11af40ea704b1b7021b84756c61cd3a3c7c86547ec95760ae9a98a3eea1e0
+  languageName: node
+  linkType: hard
+
 "@types/node-fetch@npm:^2.5.12":
   version: 2.5.12
   resolution: "@types/node-fetch@npm:2.5.12"
@@ -674,7 +702,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bson@npm:^4.2.2, bson@npm:^4.5.4":
+"bson@npm:^4.2.2, bson@npm:^4.5.4, bson@npm:^4.6.0":
   version: 4.6.0
   resolution: "bson@npm:4.6.0"
   dependencies:
@@ -1260,6 +1288,13 @@ __metadata:
     signal-exit: ^3.0.3
     strip-final-newline: ^2.0.0
   checksum: fba9022c8c8c15ed862847e94c252b3d946036d7547af310e344a527e59021fd8b6bb0723883ea87044dc4f0201f949046993124a42ccb0855cae5bf8c786343
+  languageName: node
+  linkType: hard
+
+"extend@npm:^3.0.0":
+  version: 3.0.2
+  resolution: "extend@npm:3.0.2"
+  checksum: a50a8309ca65ea5d426382ff09f33586527882cf532931cb08ca786ea3146c0553310bda688710ff61d7668eba9f96b923fe1420cdf56a2c3eaf30fcab87b515
   languageName: node
   linkType: hard
 
@@ -2318,13 +2353,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb-connection-string-url@npm:^2.1.0":
+"mongodb-connection-string-url@npm:^2.1.0, mongodb-connection-string-url@npm:^2.2.0":
   version: 2.2.0
   resolution: "mongodb-connection-string-url@npm:2.2.0"
   dependencies:
     "@types/whatwg-url": ^8.2.1
     whatwg-url: ^11.0.0
   checksum: 1ebb2235accf0fb9d7916a9e445b8a72f913d7ba613c9ce85d6cffe8d272fef80fd6393847feb6a2fb5de4ccb0f6ae092604315283022459cf1c9582f415a166
+  languageName: node
+  linkType: hard
+
+"mongodb@npm:*":
+  version: 4.2.1
+  resolution: "mongodb@npm:4.2.1"
+  dependencies:
+    bson: ^4.6.0
+    denque: ^2.0.1
+    mongodb-connection-string-url: ^2.2.0
+    saslprep: ^1.0.3
+  dependenciesMeta:
+    saslprep:
+      optional: true
+  checksum: 3bd32c0afe538ee1c7166b69721941c2fc2fe2c30bada62d3178530942a119d83083a13b9263005f9b468acc5b25df82f848b809a2bb67169ea2074d4ffb4cef
   languageName: node
   linkType: hard
 
@@ -2340,6 +2390,17 @@ __metadata:
     saslprep:
       optional: true
   checksum: 8d5a3caf349bdf10d0f14ab73f55e3cc194bc9e0f740a3b0e1e089fa721af725e27d2f4916c837013e1ba2561bded9df11253dae4b1c687c341e876a36ff4815
+  languageName: node
+  linkType: hard
+
+"mongoose-auto-increment@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "mongoose-auto-increment@npm:5.0.1"
+  dependencies:
+    extend: ^3.0.0
+  peerDependencies:
+    mongoose: ^4.1.12
+  checksum: b8af83d12e653b83eddc642258bc7827bddad906989eb5cea8ac6e955acc9c1d59034cfdfebbfd00c92f883a273e9a4dc8c3d042aa083c3016d8415b1c32275b
   languageName: node
   linkType: hard
 
@@ -3345,6 +3406,7 @@ __metadata:
     "@commitlint/cli": ^15.0.0
     "@commitlint/config-angular": ^15.0.0
     "@types/glob": ^7
+    "@types/mongoose-auto-increment": ^5
     "@types/node": ^16.11.10
     consola: ^2.15.3
     discord.js: ^13.3.1
@@ -3352,6 +3414,7 @@ __metadata:
     husky: ^7.0.4
     lint-staged: ^12.1.2
     mongoose: ^6.0.14
+    mongoose-auto-increment: ^5.0.1
     path: ^0.12.7
     prettier: ^2.5.0
     ts-node: ^10.4.0
