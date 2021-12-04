@@ -14,7 +14,7 @@ export const run: RunFunc = async (client, message, args) => {
 		guildid: message.guild.id,
 		modid: message.author.id,
 		reason: reason,
-		duration: 'permanently',
+		type: 'kick',
 	});
 
 	data.save();
