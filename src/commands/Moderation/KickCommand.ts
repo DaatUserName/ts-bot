@@ -22,7 +22,7 @@ export const run: RunFunc = async (client, message, args) => {
 	member.kick(reason);
 	const embed = new MessageEmbed()
 		.setColor('BLURPLE')
-		.setTitle(`**Moderation: ban [Case ID: ${data._id}$]`)
+		.setTitle(`**Moderation: kick [Case ID: ${data._id}$]`)
 		.addFields(
 			{ name: 'Member', value: `${member}`, inline: true },
 			{ name: 'Moderator', value: `${message.author.tag}`, inline: true },
