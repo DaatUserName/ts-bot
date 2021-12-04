@@ -7,4 +7,3 @@ dist
 !.yarn/versions
 config.json
 node_modules/*
-conifg.json
