@@ -24,9 +24,6 @@ export const run: RunFunc = async (client, message: Message) => {
 	command.run(client, message, args).catch((reason: any) => {
 		consola.error(new Error(`${reason}`));
 	});
-	if (message.content.startsWith('?bot')) {
-		return message.reply('Hiii ' + client.user.tag);
-	}
 };
 
 export const name: string = 'messageCreate';
