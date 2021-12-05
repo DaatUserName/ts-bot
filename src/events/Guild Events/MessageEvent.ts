@@ -19,7 +19,7 @@ export const run: RunFunc = async (client, message: Message) => {
 
 	const args: string[] = message.content.slice('?'.length).trim().split(/ +/g);
 	const cmd: string = args.shift();
-	const command: Command = client.commands.get(cmd.toLowerCase());
+	const command: Command = client.commands.get(cmd);
 	if (!command) return;
 	command.run(client, message, args).catch((reason: any) => {
 		consola.error(new Error(`${reason}`));
